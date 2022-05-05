@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "171411839169",
+    "firebase_url": "https://findcure-6e23d-default-rtdb.firebaseio.com/",
+    "project_id": "findcure-6e23d",
+    "storage_bucket": "findcure-6e23d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171411839169:android:2703d83a1da356ae12dc40",
+        "android_client_info": {
+          "package_name": "com.android.mobile.findcure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171411839169-345o7809d7tahu3vikvctimldgrjjuar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.mobile.findcure",
+            "certificate_hash": "dbe6483759ea2bb933aad977bf5fcde00d05287f"
+          }
+        },
+        {
+          "client_id": "171411839169-dv4tq2itgodvsqgko5n39r3bbb2f6arm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX1SLKbim9-vyGtg8j_gli5AlDsiBGlXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171411839169-dv4tq2itgodvsqgko5n39r3bbb2f6arm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

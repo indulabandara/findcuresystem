@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/layoutName"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donor name"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                android:textSize="11sp"
+                android:fontFamily="@font/poppins_regular"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:id="@+id/donorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="full name"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact number"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_regular"
+                tools:ignore="SmallSp"/>
+            <TextView
+                android:id="@+id/donorContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9999988888"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_regular"
+                tools:ignore="SmallSp"/>
+            <TextView
+                android:id="@+id/donorAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XYZ road, ABCD"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total donation"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_regular"
+                tools:ignore="SmallSp"/>
+            <TextView
+                android:id="@+id/totaldonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last donation"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey"
+                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_regular"
+                tools:ignore="SmallSp"/>
+            <TextView
+                android:id="@+id/lastdonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30/01/2000"
+                android:fontFamily="@font/poppins_bold"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light"
+                android:id="@+id/viewDivider"
+                android:layout_below="@id/targetBG"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_below="@id/viewDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/contactButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Contact"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/red"
+                    android:letterSpacing="0.1"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:drawableStart="@drawable/ic_phone_outline"
+                    android:drawableTint="@color/red"
+                    android:paddingStart="16dp"
+                    android:drawablePadding="-16dp"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="m" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="16dp"
+                    android:background="@color/grey_light"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:id="@+id/shareButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="Share"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/red"
+                    android:letterSpacing="0.1"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:elevation="0dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:drawableStart="@drawable/ic_share_outline"
+                    android:drawableTint="@color/red"
+                    android:paddingStart="16dp"
+                    android:drawablePadding="-10dp"
+                    tools:ignore="RtlSymmetry"
+                    tools:targetApi="m"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

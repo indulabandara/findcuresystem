@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.VerifyActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify your email id first. \nClick on the verify button to verify your email address."
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Verify"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="19sp"
+        android:letterSpacing="0.06"
+        android:id="@+id/verifyBtn"
+        android:background="@drawable/ripple_signin_btn"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

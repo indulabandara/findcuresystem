@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Needed For"
+            android:includeFontPadding="false"
+            android:textColor="@color/grey"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/poppins_regular"/>
+        <TextView
+            android:id="@+id/reqstUser"
+            android:layout_below="@id/userName"
+            android:text="ABC"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/posted"
+            android:text="11:30 PM, 17/10/2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:id="@+id/locationTxt"
+            android:layout_below="@id/reqstUser"
+            android:includeFontPadding="false"
+            android:textColor="@color/grey"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/reqstLocation"
+            android:layout_below="@id/locationTxt"
+            android:text="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/contactTxt"
+            android:text="Contact number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/grey"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/reqstLocation"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/targetCN"
+            android:text="Phone number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:layout_below="@id/contactTxt"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/bloodGroup"
+            android:text="Blood Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/grey"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/targetCN"
+            android:fontFamily="@font/poppins_regular" />
+
+        <TextView
+            android:id="@+id/targetBG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AB+"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_bold"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:layout_below="@id/bloodGroup"
+            android:textColor="@color/black"  />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light"
+            android:id="@+id/viewDivider"
+            android:layout_below="@id/targetBG"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_below="@id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/contactButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Contact"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/red"
+                android:letterSpacing="0.1"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:elevation="0dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:drawableStart="@drawable/ic_phone_outline"
+                android:drawableTint="@color/red"
+                android:paddingStart="16dp"
+                android:drawablePadding="-16dp"
+                tools:ignore="RtlSymmetry"
+                tools:targetApi="m" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:background="@color/grey_light"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Share"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/red"
+                android:letterSpacing="0.1"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:elevation="0dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:drawableStart="@drawable/ic_share_outline"
+                android:drawableTint="@color/red"
+                android:paddingStart="16dp"
+                android:drawablePadding="-10dp"
+                tools:ignore="RtlSymmetry"
+                tools:targetApi="m"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
